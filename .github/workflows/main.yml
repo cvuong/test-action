@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+  publish_docs:
+    name: Publish docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: docploy/docploy-action
+      - name: Pubish docs
+        uses: ./
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
