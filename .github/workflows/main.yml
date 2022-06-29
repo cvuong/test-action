@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: docploy/docploy-action@main
+        uses: actions/checkout@v3
       - name: Pubish docs
-        uses: ./
+        uses: docploy/docploy-action@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
