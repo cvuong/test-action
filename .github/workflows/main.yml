@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: docploy/docploy-action@master
+        uses: docploy/docploy-action@main
       - name: Pubish docs
         uses: ./
         with:
