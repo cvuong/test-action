@@ -5,8 +5,8 @@ jobs:
     name: Publish docs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      # - name: Checkout
+      #   uses: actions/checkout@v3
       - name: Pubish docs
         uses: docploy/docploy-action@main
         with:
