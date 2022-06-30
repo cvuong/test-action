@@ -11,3 +11,4 @@ jobs:
         uses: docploy/docploy-action@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          workspace: ${{ env.GITHUB_WORKSPACE }}
