@@ -12,3 +12,4 @@ jobs:
         with:
           baseUrl: 'https://cvuong.github.io/test-action/'
           token: ${{ secrets.GITHUB_TOKEN }}
+          timeout: 180
