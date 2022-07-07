@@ -1,8 +1,8 @@
-import snippet from './snippet';
+import example from './example';
 
-describe('snippet', () => {
+describe('example', () => {
   it('should return 2', () => {
-    // const result = snippet();
-    expect(2).toBe(2);
+    const result = example();
+    expect(result).toBe(2);
   });
 });
