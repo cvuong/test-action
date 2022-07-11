@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Publish docs
-        uses: docploy/docploy-action@main
+        uses: docploy/docploy-action@latest
         with:
           baseUrl: 'https://cvuong.github.io/test-action/'
           docsDir: 'docs'
