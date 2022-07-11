@@ -9,6 +9,4 @@ jobs:
         uses: docploy/docploy-action@main
         with:
           baseUrl: 'https://cvuong.github.io/test-action/'
-          docsDir: 'docs/'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          timeout: 180
+          docsDir: 'docs'
