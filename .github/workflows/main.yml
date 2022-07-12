@@ -6,7 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Publish docs
-        uses: docploy/docploy-action@v1
+        uses: docploy/docploy-action@main
         with:
           baseUrl: 'https://cvuong.github.io/test-action/'
           docsDir: 'docs'
+      - name: Run tests
+        run: yarn run jest docs
