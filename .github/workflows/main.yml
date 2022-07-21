@@ -1,8 +1,5 @@
 on: [pull_request]
 
-permissions:
-  pull-requests: write
-
 jobs:
   publish_docs:
     name: Publish docs
@@ -14,6 +11,7 @@ jobs:
           baseUrl: 'https://cvuong.github.io/test-action/'
           docsDir: 'docs'
           githubToken: ${{ secrets.GITHUB_TOKEN }}
+          test: 'test'
   test_docs:
     name: Test docs
     runs-on: ubuntu-latest
